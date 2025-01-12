@@ -1,2 +1,2 @@
 # SaleApp
-Application for sales
+Spring boot + Angular + MySQL
