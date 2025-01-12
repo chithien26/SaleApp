@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Menu bên trái, Header và Footer bên phải */
+    grid-template-rows: 100px 1fr 100px; /* Header, Content, Footer */
+    height: 100vh; /* Phủ toàn bộ chiều cao màn hình */
+}
+
+.menu {
+    grid-row: 1 / 4; /* Menu kéo dài cả 3 hàng */
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    grid-column: 2 / 3; /* Header chỉ nằm bên phải */
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    grid-column: 2 / 3; /* Content bên phải */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    grid-column: 2 / 3; /* Footer bên phải */
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:insert="${pageTitle}">Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="/css/layout.css">
+</head>
+<body>
+<div class="container">
+    <!-- Menu -->
+    <div class="menu" th:replace="fragments/menu :: menu"></div>
+    <!-- Header -->
+    <div class="header" th:replace="fragments/header :: header"></div>
+    <!-- Main Content -->
+    <div class="content" th:insert="~{::content}"></div>
+    <!-- Footer -->
+    <div class="footer" th:replace="fragments/footer :: footer"></div>
+</div>
+</body>
+</html>
