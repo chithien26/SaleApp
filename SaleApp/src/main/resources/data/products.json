@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Laptop Dell",
+    "description": "Laptop cao cấp với hiệu năng mạnh mẽ",
+    "price": 20000000
+  },
+  {
+    "name": "iPhone 15",
+    "description": "Điện thoại mới nhất với camera chất lượng cao",
+    "price": 25000000
+  },
+  {
+    "name": "Tai nghe Sony",
+    "description": "Tai nghe mang đến chất lượng âm thanh tuyệt vời",
+    "price": 3000000
+  }
+]

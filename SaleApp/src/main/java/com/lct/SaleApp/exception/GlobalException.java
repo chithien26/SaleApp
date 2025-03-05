@@ -6,8 +6,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-@ControllerAdvice
+@RestControllerAdvice
 public class GlobalException {
     @ExceptionHandler(value = RuntimeException.class)
     ResponseEntity<ApiResponse> handlingRuntimeExeption(RuntimeException exception){
@@ -15,7 +16,7 @@ public class GlobalException {
     }
 
     @ExceptionHandler(value = MethodArgumentNotValidException.class)
-    ResponseEntity<ApiResponse> handlingArgumentNotValidExceptionExeption(MethodArgumentNotValidException exception){
+    ResponseEntity<ApiResponse> handlingArgumentNotValidException(MethodArgumentNotValidException exception){
         return ResponseEntity.badRequest().body(new ApiResponse(HttpStatus.BAD_REQUEST.value(), exception.getFieldError().getDefaultMessage(), null));
     }
 }

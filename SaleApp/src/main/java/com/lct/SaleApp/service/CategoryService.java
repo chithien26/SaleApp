@@ -11,7 +11,7 @@ import java.util.List;
 
 @Service
 public class CategoryService {
-
+    
     private final CategoryRepository categoryRepository;
 
     public CategoryService(CategoryRepository categoryRepository) {
@@ -44,11 +44,13 @@ public class CategoryService {
             throw new RuntimeException("Category existed!");
         }
 
-        Category c = new Category();
-        c.setName(request.getName());
-        c.setImage(request.getImage());
-        c.setDescription(request.getDescription());
-        c.setParent(categoryRepository.getById(request.getParent()));
+        Category c = Category.builder()
+                .name(request.getName())
+                .image(request.getImage())
+                .description(request.getDescription())
+                .parent(categoryRepository.getById(request.getParent()))
+                .build();
+
         categoryRepository.save(c);
         return c;
     }

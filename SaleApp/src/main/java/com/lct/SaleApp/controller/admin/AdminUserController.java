@@ -23,8 +23,8 @@ public class AdminUserController {
 
     @GetMapping
     public String users(Model model) {
-        return "layout/layout";
-//        return "content/user/UserManagement";
+//        return "layout/layout";
+        return "content/user/UserManagement";
     }
 //    @GetMapping
 //    public ApiResponse<List<User>> getUsers(){

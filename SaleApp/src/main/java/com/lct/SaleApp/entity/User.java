@@ -2,8 +2,7 @@ package com.lct.SaleApp.entity;
 
 import com.lct.SaleApp.dto.enumClass.Role;
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Data;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
@@ -15,13 +14,17 @@ import java.util.logging.Level;
 
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class User extends BaseModel{
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     String id;
-    @Column(unique = true)
+    @Column(unique = true, nullable = false)
     String username;
+    @Column(nullable = false)
     String password;
     @Column(name = "first_name")
     String firstName;

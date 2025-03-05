@@ -3,12 +3,14 @@ package com.lct.SaleApp.entity;
 import com.lct.SaleApp.dto.enumClass.OrderStatus;
 import com.lct.SaleApp.dto.enumClass.PaymentMethod;
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Data;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Table(name = "orders")
 public class Order extends BaseModel{

@@ -1,8 +1,7 @@
 package com.lct.SaleApp.entity;
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Data;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.hibernate.annotations.FractionalSeconds;
 import org.springframework.boot.context.properties.bind.DefaultValue;
@@ -11,6 +10,9 @@ import java.time.LocalDateTime;
 
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Product extends BaseModel{
     @Id
