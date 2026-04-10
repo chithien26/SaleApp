@@ -1,5 +1,6 @@
 package com.lct.SaleApp.product.entity;
 
+import com.lct.SaleApp.common.entity.BaseModel;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -13,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Cart extends BaseModel{
+public class Cart extends BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     String id;

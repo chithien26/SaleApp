@@ -1,5 +1,6 @@
 package com.lct.SaleApp.product.entity;
 
+import com.lct.SaleApp.common.entity.BaseModel;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -12,7 +13,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Product extends BaseModel{
+public class Product extends BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     String id;

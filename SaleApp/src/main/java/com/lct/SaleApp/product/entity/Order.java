@@ -1,5 +1,6 @@
 package com.lct.SaleApp.product.entity;
 
+import com.lct.SaleApp.common.entity.BaseModel;
 import com.lct.SaleApp.product.dto.enumClass.OrderStatus;
 import com.lct.SaleApp.product.dto.enumClass.PaymentMethod;
 import jakarta.persistence.*;
@@ -13,7 +14,7 @@ import lombok.experimental.FieldDefaults;
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Table(name = "orders")
-public class Order extends BaseModel{
+public class Order extends BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     String id;

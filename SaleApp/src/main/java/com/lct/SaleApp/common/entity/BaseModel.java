@@ -1,4 +1,4 @@
-package com.lct.SaleApp.product.entity;
+package com.lct.SaleApp.common.entity;
 
 import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.PreUpdate;
