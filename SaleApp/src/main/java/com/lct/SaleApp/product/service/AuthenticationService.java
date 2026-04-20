@@ -31,14 +31,14 @@ public class AuthenticationService {
     }
 
     public String generateToken(String username){
-        long expitationTime = 1000 * 60 * 60;
+        long expirationTime = 1000 * 60 * 60;
         JWSHeader jwsHeader = new JWSHeader(JWSAlgorithm.HS512);
 
         JWTClaimsSet jwtClaimsSet = new JWTClaimsSet.Builder()
                 .subject(username)
-                .issuer("mockhoaxinh.com")
+                .issuer("sales.com")
                 .issueTime(new Date())
-                .expirationTime(new Date(new Date().getTime() + expitationTime))
+                .expirationTime(new Date(new Date().getTime() + expirationTime))
                 .build();
 
         Payload payload = new Payload(jwtClaimsSet.toJSONObject());
