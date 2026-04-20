@@ -1,9 +1,9 @@
-package com.lct.SaleApp.product.mapper;
+package com.lct.SaleApp.user.mapper;
 
-import com.lct.SaleApp.product.dto.request.userRequest.RequestCreateUser;
-import com.lct.SaleApp.product.dto.request.userRequest.RequestUpdateUser;
 import com.lct.SaleApp.product.dto.response.UserResponse;
-import com.lct.SaleApp.product.entity.User;
+import com.lct.SaleApp.user.dto.request.userRequest.RequestCreateUser;
+import com.lct.SaleApp.user.dto.request.userRequest.RequestUpdateUser;
+import com.lct.SaleApp.user.entity.User;
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;

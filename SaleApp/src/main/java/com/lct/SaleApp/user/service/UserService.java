@@ -1,10 +1,10 @@
-package com.lct.SaleApp.product.service;
+package com.lct.SaleApp.user.service;
 
-import com.lct.SaleApp.product.dto.request.userRequest.RequestCreateUser;
-import com.lct.SaleApp.product.dto.request.userRequest.RequestUpdateUser;
-import com.lct.SaleApp.product.entity.User;
-import com.lct.SaleApp.product.mapper.UserMapper;
-import com.lct.SaleApp.product.repository.UserRepository;
+import com.lct.SaleApp.user.dto.request.userRequest.RequestCreateUser;
+import com.lct.SaleApp.user.dto.request.userRequest.RequestUpdateUser;
+import com.lct.SaleApp.user.entity.User;
+import com.lct.SaleApp.user.mapper.UserMapper;
+import com.lct.SaleApp.user.repository.UserRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -21,8 +21,6 @@ public class UserService {
     UserRepository userRepository;
     UserMapper userMapper;
     PasswordEncoder passwordEncoder;
-
-
 
     public List<User> getAllUser(){
         return userRepository.findAll();

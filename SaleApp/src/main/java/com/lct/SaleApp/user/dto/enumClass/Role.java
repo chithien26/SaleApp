@@ -1,4 +1,4 @@
-package com.lct.SaleApp.product.dto.enumClass;
+package com.lct.SaleApp.user.dto.enumClass;
 
 public enum Role {
     ROLE_USER,

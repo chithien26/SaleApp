@@ -1,4 +1,4 @@
-package com.lct.SaleApp.product.dto.request.LoginRequest;
+package com.lct.SaleApp.user.dto.response;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -10,7 +10,10 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class LoginRequest {
+public class UserResponse {
+    String id;
     String username;
-    String password;
+    String firstName;
+    String lastName;
+    String email;
 }

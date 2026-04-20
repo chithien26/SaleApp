@@ -1,4 +1,4 @@
-package com.lct.SaleApp.product.dto.response;
+package com.lct.SaleApp.common.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;

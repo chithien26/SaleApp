@@ -1,6 +1,6 @@
-package com.lct.SaleApp.product.dto.request.userRequest;
+package com.lct.SaleApp.user.dto.request.userRequest;
 
-import com.lct.SaleApp.product.dto.enumClass.Role;
+import com.lct.SaleApp.user.dto.enumClass.Role;
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Size;
@@ -18,7 +18,7 @@ public class RequestUpdateUser {
     String lastName;
     @Size(min = 10, max = 10, message = "Phone number must have 10 characters!")
     @Column(name = "phone_number")
-    String phoneNunber;
+    String phoneNumber;
     @Email(message = "Email: ...@gmail.com")
     String email;
     @Column(name = "date_of_birth")

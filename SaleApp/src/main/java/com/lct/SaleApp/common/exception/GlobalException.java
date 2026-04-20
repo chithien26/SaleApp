@@ -1,6 +1,6 @@
 package com.lct.SaleApp.exception;
 
-import com.lct.SaleApp.product.dto.response.ApiResponse;
+import com.lct.SaleApp.common.dto.ApiResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

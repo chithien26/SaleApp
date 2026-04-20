@@ -1,4 +1,4 @@
-package com.lct.SaleApp.product.entity;
+package com.lct.SaleApp.user.entity;
 
 import com.lct.SaleApp.common.entity.BaseModel;
 import jakarta.persistence.*;

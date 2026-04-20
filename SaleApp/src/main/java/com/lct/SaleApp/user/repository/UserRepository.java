@@ -1,6 +1,6 @@
-package com.lct.SaleApp.product.repository;
+package com.lct.SaleApp.user.repository;
 
-import com.lct.SaleApp.product.entity.User;
+import com.lct.SaleApp.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

@@ -1,9 +1,13 @@
-package com.lct.SaleApp.product.entity;
+package com.lct.SaleApp.order.entity;
 
 import com.lct.SaleApp.common.entity.BaseModel;
+import com.lct.SaleApp.user.entity.User;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Data
@@ -11,17 +15,12 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class OrderItem extends BaseModel {
+public class Cart extends BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     String id;
-    @ManyToOne
-    @JoinColumn(name = "order_id")
-    Order order;
-    @ManyToOne
-    @JoinColumn(name = "product_id")
-    Product product;
-    int quantity;
-    Double price;
-
+    @OneToOne
+    User user;
+    @OneToMany(mappedBy = "cart")
+    List<CartItem> cartItems = new ArrayList<>();
 }

@@ -1,10 +1,12 @@
-package com.lct.SaleApp.product.service;
+package com.lct.SaleApp.user.service;
 
-import com.lct.SaleApp.product.entity.User;
+import com.lct.SaleApp.user.entity.User;
 import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.MACSigner;
 import com.nimbusds.jwt.JWTClaimsSet;
-import lombok.*;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;

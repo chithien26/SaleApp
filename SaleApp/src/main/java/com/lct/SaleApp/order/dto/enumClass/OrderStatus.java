@@ -1,4 +1,5 @@
-package com.lct.SaleApp.product.dto.enumClass;
+package com.lct.SaleApp.order.dto.enumClass;
+
 
 public enum OrderStatus {
     PENDING_PAYMENT,

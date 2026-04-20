@@ -16,15 +16,15 @@ import java.util.List;
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class ProductService {
     ProductRepository productRepository;
-    ProductMapper productMapper;
+//    ProductMapper productMapper;
 
     public List<Product> getAllProduct(){
         return productRepository.findAll();
     }
 
-    public Product createProduct(RequestCreateProduct requestCreateProduct){
-        Product product = productMapper.toProduct(requestCreateProduct);
-        productRepository.save(product);
-        return product;
-    }
+//    public Product createProduct(RequestCreateProduct requestCreateProduct){
+//        Product product = productMapper.toProduct(requestCreateProduct);
+//        productRepository.save(product);
+//        return product;
+//    }
 }

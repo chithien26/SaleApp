@@ -7,7 +7,7 @@ spring:
   datasource:
     url: "jdbc:mysql://localhost:3306/saleappdb"
     username: 'root'
-    password: 'chithien26@'
+    password: ''
   jpa:
     hibernate:
       ddl-auto: update
